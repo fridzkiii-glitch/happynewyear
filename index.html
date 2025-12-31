@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Tahun Baru Kita 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HALAMAN AWAL -->
+  <div id="halamanAwal" class="slide active">
+    <h1>🎆 Selamat Tahun Baru 🎆</h1>
+    <h2>Untuk cewee kesayanggankuuu 💕</h2>
+
+    <img src="hihii.jpg" class="foto">
+
+    <p>Tahun ini boleh berganti, tapi rasa syukurkuu, sayangkuuu, cintakuu tak kan terganti ke kamuu ✨</p>
+
+    <button onclick="masukDashboard()">💌 Buka Pesan</button>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="dashboard" class="slide">
+    <h2>💖 Pilih Pesan 💖</h2>
+
+    <div class="menu-ikon">
+      <div class="ikon" onclick="tampilPesan('doa')">
+        🙏
+        <span>Doa</span>
+      </div>
+      <div class="ikon" onclick="tampilPesan('harapan')">
+        ✉️
+        <span>Pesan</span>
+      </div>
+      <div class="ikon" onclick="tampilPesan('kenangan')">
+        ✨
+        <span>Harapan</span>
+      </div>
+    </div>
+
+    <div id="isiPesan" class="box-pesan">
+      Pilih salah satu ikon yaa 💕
+    </div>
+
+    <button class="kembali" onclick="kembali()">⬅ Kembali</button>
+  </div>
+
+</div>
+
+<!-- MUSIK -->
+<audio id="musik" loop>
+  <source src="sound.mpeg" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
